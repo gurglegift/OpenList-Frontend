@@ -100,7 +100,6 @@ jobs:
           echo "current_tag=$CURRENT_TAG" >> $GITHUB_OUTPUT
 
           # Temporarily remove all pre-release tags (tags containing '-' / '+')
-          # This prevents them from interfering with changelog generation
           PRE_RELEASE_TAGS=$(git tag -l | grep -E "(-|\+)" || true)
           if [ -n "$PRE_RELEASE_TAGS" ]; then
             echo "Temporarily removing pre-release tags: $PRE_RELEASE_TAGS"
@@ -112,11 +111,6 @@ jobs:
           if [[ "${{ steps.check_pre_release.outputs.is_pre_release }}" == "true" ]]; then
             git tag -a "$CURRENT_TAG" -m "Release $CURRENT_TAG"
           fi
-
-      - name: Generate changelog
-        id: generate_changelog
-        run: |
-          npx changelogithub --output ${{ github.workspace }}-CHANGELOG.txt || echo "" > ${{ github.workspace }}-CHANGELOG.txt
 
       - name: Build Release
         run: |
@@ -145,7 +139,7 @@ jobs:
           git tag -d ${{ steps.get_current_tag.outputs.current_tag }}
           gh release create \
             --title "Release ${{ steps.get_current_tag.outputs.current_tag }}" \
-            --notes-file "${{ github.workspace }}-CHANGELOG.txt" \
+            --notes "Release ${{ steps.get_current_tag.outputs.current_tag }}" \
             --prerelease=${{ steps.check_pre_release.outputs.is_pre_release }} \
             ${{ steps.get_current_tag.outputs.current_tag }} \
             dist/openlist-frontend-dist-v*.tar.gz lite-dist/openlist-frontend-dist-lite-v*.tar.gz dist/i18n.tar.gz
