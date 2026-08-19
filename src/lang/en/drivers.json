@@ -184,7 +184,7 @@
       "stream": "Stream"
     },
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32",
+    "upload_thread-tips": "1<=thread<=32",
     "username": "Username",
     "validate_code": "Validate code"
   },
@@ -210,7 +210,7 @@
       "personal": "Personal"
     },
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32"
+    "upload_thread-tips": "1<=thread<=32"
   },
   "AList V3": {
     "forward_archive_requests": "Forward archive requests",
@@ -401,7 +401,7 @@
     "root_folder_path": "Root folder path",
     "upload_api": "Upload api",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32",
+    "upload_thread-tips": "1<=thread<=32",
     "upload_timeout": "Upload timeout",
     "upload_timeout-tips": "per-slice upload timeout in seconds",
     "use_dynamic_upload_api": "Use dynamic upload api",
@@ -419,7 +419,7 @@
       "root_only_file": "Root only file"
     },
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32"
+    "upload_thread-tips": "1<=thread<=32"
   },
   "Bunny Storage": {
     "access_key": "Access key",
@@ -455,7 +455,7 @@
   },
   "Chunk": {
     "chunk_large_file_only": "Chunk large file only",
-    "chunk_large_file_only-tips": "chunk only if file size \u003e part_size",
+    "chunk_large_file_only-tips": "chunk only if file size > part_size",
     "chunk_prefix": "Chunk prefix",
     "chunk_prefix-tips": "the prefix of chunk folder",
     "custom_ext": "Custom ext",
@@ -775,7 +775,7 @@
     "refresh_token-tips": "login type is refresh_token,this is required",
     "root_folder_path": "Root folder path",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1 \u003c= thread \u003c= 32"
+    "upload_thread-tips": "1 <= thread <= 32"
   },
   "HalalCloudOpen": {
     "client_id": "Client id",
@@ -787,7 +787,7 @@
     "timeout": "Timeout",
     "timeout-tips": "timeout in seconds",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1 \u003c= thread \u003c= 32"
+    "upload_thread-tips": "1 <= thread <= 32"
   },
   "ILanZou": {
     "ip": "Ip",
@@ -930,7 +930,7 @@
     "sms_code": "Sms code",
     "sms_code-tips": "input 'send' send sms ",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32"
+    "upload_thread-tips": "1<=thread<=32"
   },
   "NeteaseMusic": {
     "cookie": "Cookie",
@@ -1502,7 +1502,7 @@
     },
     "root_folder_id": "Root folder id",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "4\u003c=thread\u003c=32"
+    "upload_thread-tips": "4<=thread<=32"
   },
   "WoPan": {
     "access_token": "Access token",
@@ -1558,7 +1558,7 @@
     },
     "root_folder_path": "Root folder path",
     "smallChannelName": "SmallChannelName",
-    "smallChannelName-tips": "Channel name for regular files (typically \u003c20MB)",
+    "smallChannelName-tips": "Channel name for regular files (typically <20MB)",
     "token": "Token",
     "token-tips": "Authentication Token",
     "uploadThread": "UploadThread",
@@ -1669,7 +1669,8 @@
     "WeiYun": {},
     "WoPan": {},
     "YandexDisk": {},
-    "cloudflare_imgbed": {}
+    "cloudflare_imgbed": {},
+    "Streamtape": {}
   },
   "drivers": {
     "115 Cloud": "115 Cloud",
@@ -1764,6 +1765,15 @@
     "WeiYun": "WeiYun",
     "WoPan": "WoPan",
     "YandexDisk": "YandexDisk",
-    "cloudflare_imgbed": "Cloudflare imgbed"
+    "cloudflare_imgbed": "Cloudflare imgbed",
+    "Streamtape": "Streamtape"
+  },
+  "Streamtape": {
+    "api_login": "Api login",
+    "api_login-tips": "Streamtape API Login",
+    "api_key": "Api key",
+    "api_key-tips": "Streamtape API Key",
+    "root_folder_id": "Root folder id",
+    "alert": "Streamtape limits folder traversal. Files can only be managed in folders, not the root directory."
   }
 }
