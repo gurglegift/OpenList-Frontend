@@ -1670,7 +1670,9 @@
     "WoPan": {},
     "YandexDisk": {},
     "cloudflare_imgbed": {},
-    "Streamtape": {}
+    "Streamtape": {
+      "alert": "Streamtape limits folder traversal. Files can only be managed in folders, not the root directory."
+    }
   },
   "drivers": {
     "115 Cloud": "115 Cloud",
@@ -1773,7 +1775,6 @@
     "api_login-tips": "Streamtape API Login",
     "api_key": "Api key",
     "api_key-tips": "Streamtape API Key",
-    "root_folder_id": "Root folder id",
-    "alert": "Streamtape limits folder traversal. Files can only be managed in folders, not the root directory."
+    "root_folder_id": "Root folder id"
   }
 }
