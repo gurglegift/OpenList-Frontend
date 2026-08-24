@@ -1162,6 +1162,13 @@
     "token": "Token",
     "username": "Username"
   },
+  "Streamtape": {
+    "api_key": "Api key",
+    "api_key-tips": "Streamtape API Key",
+    "api_login": "Api login",
+    "api_login-tips": "Streamtape API Login",
+    "root_folder_id": "Root folder id"
+  },
   "Strm": {
     "KeepLocalDownloadFile": "KeepLocalDownloadFile",
     "KeepLocalDownloadFile-tips": "keep local download files",
@@ -1649,6 +1656,9 @@
     "SFTP": {},
     "SMB": {},
     "Seafile": {},
+    "Streamtape": {
+      "alert": "Streamtape limits folder traversal. Files can only be managed in folders, not the root directory."
+    },
     "Strm": {},
     "Teambition": {},
     "Teldrive": {},
@@ -1744,6 +1754,7 @@
     "SFTP": "SFTP",
     "SMB": "SMB",
     "Seafile": "Seafile",
+    "Streamtape": "Streamtape",
     "Strm": "Strm",
     "Teambition": "Teambition",
     "Teldrive": "Teldrive",
